@@ -33,7 +33,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>Installation Steps</h2>
 
 <p>
-<img src="Screenshot 2023-09-04 231039.png"></img>
+
 
 </p>
 <p>
