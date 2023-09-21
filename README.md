@@ -42,6 +42,7 @@ First step you want to take is creating a Windows 10 virtual machine with 4vCPUS
 <br />
 
 <p>
+<img src="Screenshot 2023-09-21 120557.png"></img> 
 <img src="Screenshot 2023-09-04 233733.png"></img>
 
 </p>
