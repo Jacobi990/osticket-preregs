@@ -37,7 +37,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 
 <img src="Screenshot 2023-09-18 194753.png"></img>
-First step you want to take is creating a Windows 10 virtual machine with 2cpus so it can run at the most optimal speed .
+First step you want to take is creating a Windows 10 virtual machine with 4vCPUS so it can run at the most optimal speed . You also have to create a username and password and that can be whatever you choose.
 </p>
 <br />
 
