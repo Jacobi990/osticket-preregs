@@ -42,12 +42,12 @@ First step you want to take is creating a Windows 10 virtual machine with 4vCPUS
 <br />
 
 <p>
-<img src="Screenshot 2023-09-21 120557.png"></img> 
-<img src="Screenshot 2023-09-04 233733.png"></img>
+<img src="Screenshot 2023-09-21 120557.png"></img> <img src="Screenshot 2023-09-21 120643.png"></img>
+
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next step you want to take is using the public ip address of the virtual machine open remote desktop and connect to the ip address of the virtual machine. After that login with the username and password you created.
 </p>
 <br />
 
