@@ -48,6 +48,8 @@ VC Redist
 ![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/d966d278-dda6-457e-b641-72abe3896b0a)
 ![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/ad34f0c0-2dc6-4d35-943f-14801276e238)
 
+Also need to enable ISS Management Console
+
 
 
 
