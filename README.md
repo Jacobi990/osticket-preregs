@@ -109,6 +109,117 @@ Make the password: Password1
   
   ![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/96ee3267-103d-4511-9309-0ed78d15d593)
 
+  Restart the ISS server
+
+  ![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/e1d0ae2f-53a5-4a4a-b324-b207d1d4f958)
+
+  (13.) Download osTicket v1.15.8 and install from the Installation Files. Extract and copy “upload” folder to c:\inetpub\wwwroot and then within c:\inetpub\wwwroot, Rename “upload” to “osTicket”
+  
+  Once you do that reload ISS again.
+
+  (14.) Go back to IIS, sites -> Default -> osTicket- on the right, click "Browse *.80".
+  
+  ![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/23ec64de-36aa-4b3b-a048-604a46c3d5c3)
+
+  It shouldn't work the first time you click as some extensions aren't installed yet on the osTicket browser
+  
+  ![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/c89d153d-ad57-42c3-98a7-6456e6bca846)
+
+  To enable the extensions: -Go back to IIS, sites -> Default -> osTicket -Double click PHP manager -Click "Enable or disable an extension"
+  
+  ![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/fa8de3fe-b005-4c80-b3ec-c27c884c41b1) ![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/c50110af-e0b1-447d-93ea-e06b950b8b40)
+
+Enable these extensions after you click on the extension
+- Enable: php_imap.dll
+- Enable: php_intl.dll
+- Enable: php_opcache.dll
+- 
+![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/3080e321-6aaf-4d3b-925b-37eb887d9667)
+
+(15.) Once we have all the extensions installed in ISS, we are going to want to rename one of the files in our osTicket folder. Go into the file explorer and search for C;\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+
+We are going to rename the ost-sampleconfig.php to ost-config.php
+
+Now that we have renamed the files, right click on the file and go to properties. From there click security, click on advance, and disable the inheritance. We will select Remove all inherited permissions from this object.
+
+Now we will add new permissions.
+
+Click Add
+
+![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/6a80ec92-5aab-4eee-9307-7dd83ddbfbfe)
+
+Click on select the principal
+
+![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/a52f6dfd-fa9d-4f2c-b70a-58e9b1ab2de4)
+
+Type "Everyone" in the text box
+
+![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/fb61afee-c322-4507-af7a-da9bf4bfa08b)
+
+Make sure everything is checked out including Full Controll
+
+![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/8c7225e3-5659-4a71-9173-1d66954bce01)
+
+Lastly click "Apply" then "Ok"
+
+![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/dbd82ca0-5170-4525-9ff1-cb2ada656ac7)
+
+Now we added our permissions go back to osTicket in the browser to continue in setting it up. At the bottom of osTicket click "Continue". Fill out the page as needed except for the "Database Setting". We need download and install Heidi SQL from the Installation Files
+
+![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/0d079112-45cf-48fd-83d1-888bf43dc8af)
+
+Once the program finish downloading we are going to create a new session
+
+![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/690a246b-be64-4e95-ac31-f0525093a0ea)
+
+We are going keep the username as root and set the password as "Password1"
+
+![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/58cf5c33-3da7-49b2-8769-0f1e7e6ef35c)
+
+Now everything is downloaded go back to osTicket and under "Database Settings" the username will be root and password will be "Password1"
+
+Once you finish that we'll be creating a database in Heidi SQL. In Heidi right click on the left side where is says "Unnamed", select "create new", and then select "database". Name the new database osTicket. Once we have the new database setup go back to the osTicket browser and under MySQL Database type in osTicket.
+
+![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/6d4d16ca-bd8a-49b3-9272-8fc96b6b6b0f)
+
+We will be deleting the "setup" folder as some cleanup.  -Delete: C:\inetpub\wwwroot\osTicket\setup. Only delete the setup folder and nothing else.
+Then set permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+
+![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/13cc3308-92e0-4809-9e13-08558e5e0cd7)
+![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/117d2f4d-63dd-46b2-b70d-d68675886dca)
+
+And now final step is logging into osTicket on the browser
+http://localhost/osTicket/scp/login.php 
+
+![image](https://github.com/Jacobi990/osticket-preregs/assets/143012536/d2ef5229-f5e9-415a-9637-b0ff118287f3)
+
+Great Job! You successfully downloaded osTicket
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+
 
 
 
